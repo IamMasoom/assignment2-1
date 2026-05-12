@@ -1,0 +1,232 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background: #ECE1E1;
+    font-family: "Elms Sans", sans-serif;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container{
+    width: 95%;
+    min-height: 100vh;
+
+    margin: 1.5% auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left{
+    width: 12%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+}
+
+.logo::before,
+.logo::after,
+.logo span::before,
+.logo span::after{
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 50px;
+    height: 6px;
+
+    background: #D61A1A;
+
+    transform-origin: center;
+}
+
+/* Horizontal */
+.logo::before{
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Vertical */
+.logo::after{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Diagonal 1 */
+.logo span::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Diagonal 2 */
+.logo span::after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* =========================
+   NAV
+========================= */
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav a{
+
+    color: #5A0D12;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right{
+    width: 88%;
+
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+
+h1{
+    font-size: 4rem;
+
+    color: #5A0D12;
+
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    letter-spacing: -2px;
+
+    font-weight: 500;
+}
+
+.shift{
+    margin-left: 200px;
+}
+
+.light{
+    color: #B9A9A9;
+}
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.hero-text p{
+    margin-top: 15px;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #981111;
+
+    font-weight: 500;
+}
+
+/* =========================
+   RIGHT SMALL TEXT
+========================= */
+.righttxt{
+    width: fit-content;
+}
+p{
+    color: #981111;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.righttxt p span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroimg{
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+}
+.heroimg .img{
+    border-radius: 10px;
+    width: 325px;
+    height: 350px;
+}
+.img1{
+    background-image: url("https://images.unsplash.com/photo-1735754920741-5485a50faf01?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.img2{
+    background-image: url("https://images.unsplash.com/photo-1731951039706-0e793240bb32?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.img3{
+    background-image: url("https://images.unsplash.com/photo-1659128103058-05d3bda8c04f?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.bottomtxt{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.bottomtxt p{
+    margin: 20px 0;
+}
